@@ -1,0 +1,21 @@
+.hero-section {
+  max-height: 600px !important;
+  overflow: hidden !important;
+
+}
+/* Custom breakpoints for 400px and 600px */
+@media (max-width: 443px) {
+  .hero-title,.hero-subtitle,.hero-card {
+    scale: 0.7;
+  }
+
+
+}
+
+
+@media (min-width: 444px) and( max-width: 780px) {
+  .hero-title,.hero-subtitle,.hero-card {
+    scale: 0.7;
+    margin-top: 1rem;
+  }
+}
