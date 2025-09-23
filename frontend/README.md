@@ -1,59 +1,46 @@
 
-# Emotion Recognition Frontend
 
-This is a modern, open source React web application for real-time speech emotion recognition. It provides a beautiful, interactive UI for analyzing vocal emotion using a neural network model, with seamless audio recording, file upload, and live results visualization.
+# Frontend: Emotion Recognition Web App
 
-## Features
+This folder contains the source code for the React-based frontend of the Emotion Recognition project. It provides an interactive user interface for recording or uploading audio and visualizing emotion predictions.
 
-- 🎤 Record your voice or upload audio files (WAV, MP3, etc...)
-- ⚡ Real-time neural network emotion analysis (8 emotion classes)
-- 📊 Animated, responsive results and probability breakdown
-- 🟣 Neon-inspired UI with smooth transitions and accessibility
-- 🔒 Privacy-first: audio is processed on-the-fly, never stored
-- 🌐 Powered by a Hugging Face backend (wav2vec2-based model)
+## Usage
 
-## Demo
+1. **Install dependencies:**
+	```bash
+	npm install
+	# or
+	yarn install
+	```
 
-Try the live demo: [https://manelbrh1342-emotion-recognition-app.hf.space/](https://manelbrh1342-emotion-recognition-app.hf.space/)
+2. **Start the development server:**
+	```bash
+	npm run dev
+	# or
+	yarn dev
+	```
+	The app will be available at [http://localhost:5173](http://localhost:5173).
 
-## Getting Started
+3. **Build for production:**
+	```bash
+	npm run build
+	# or
+	yarn build
+	```
 
-### Prerequisites
-- Node.js (v18+ recommended)
-- npm or yarn
+## Folder Structure
 
-### Installation
+- `src/` — Main source code
+  - `components/` — React UI components
+  - `api.js` — API integration for backend requests
+  - `index.css` — Global and Tailwind CSS styles
+- `public/` — Static assets (logos)
+- `index.html` — Main HTML template
 
-```bash
-git clone https://github.com/manelbrh1342/emotion_recognition_frontend.git
-cd emotion_recognition_frontend
-npm install
-# or
-yarn install
-```
+## Notes
 
-### Development
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-## Project Structure
-
-- `src/components/` — All React components (UI, logic, loaders, etc.)
-- `src/api.js` — API calls to the Hugging Face backend
-- `src/index.css` — Tailwind CSS and global styles
-- `public/` — Static assets (logo, icons, etc.)
+- The frontend communicates with the backend API for emotion prediction.
+- Audio is processed in-browser and sent to the backend for analysis.
+- For backend/API details, see the main project README.
 
 

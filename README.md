@@ -32,10 +32,10 @@ This project explores **emotion recognition from speech** using modern deep lear
 
 ## Demo
 
-Try the hosted demo: [Live on Vercel](ttps://emotion-recognition.vercel.app)
+Try the hosted demo: [Live on Vercel](ttps://emotionrecognition.vercel.app)
 
 
-
+![Demo Screenshot](image.png)
 ---
 
 ## Training Journey

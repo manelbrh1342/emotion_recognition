@@ -1,0 +1,36 @@
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+/dist/
+/build/
+
+# Vite
+.vite/
+
+# Misc
+*.sqlite3
+*.db
+*.pkl
+*.h5
+*.ckpt
+
+# VSCode
+.vscode/
