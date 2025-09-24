@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import SimpleFooter from './footer';
 
-const AboutModel = () => {
+const AboutModel = (props) => {
   const howItWorksSteps = [
     {
       title: "Audio Preprocessing",
@@ -103,7 +103,7 @@ const AboutModel = () => {
   };
 
   return (
-    <div className=" about-section min-h-screen bg-black text-white p-6 lg:p-8">
+    <div className={`about-section min-h-screen bg-black text-white p-6 lg:p-8${!props.resultsReady ? ' pulled' : ''}`}> 
       <div className="max-w-4xl mx-auto">
         
   {/* About Header */}

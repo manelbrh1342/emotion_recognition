@@ -70,14 +70,15 @@ const SmoothScroll = () => {
         <Hero isRecording={isRecording} setIsRecording={handleRecordingChange} />
       </section>
 
+
       <section
-  ref={emotionRef}
-  className={`relative w-full bg-gray-900 transition-opacity duration-500 ease-in-out ${
-    resultsReady ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none h-0"
-  }`}
->
-  <EmotionAnalysis predictionResult={predictionResult} />
-</section>
+        ref={emotionRef}
+        className={`relative w-full bg-gray-900 transition-opacity duration-500 ease-in-out${resultsReady ? ' pulled' : ''} ${
+          resultsReady ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none h-0"
+        }`}
+      >
+        <EmotionAnalysis predictionResult={predictionResult} />
+      </section>
 
 
 
@@ -85,7 +86,7 @@ const SmoothScroll = () => {
 
       {/* ABOUT pinned */}
       <section className="h-screen w-full bg-gray-900 sticky top-0">
-        <AboutModel />
+        <AboutModel resultsReady={resultsReady} />
       </section>
     </article>
     

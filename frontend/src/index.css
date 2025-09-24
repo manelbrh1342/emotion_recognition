@@ -76,7 +76,7 @@ button:focus-visible {
   }
 }
 @media (min-height: 620px){
-    .about-section{
-    margin-top: calc((100vh - 600px) * -1);
-  }
+    section.pulled {
+      margin-top: calc((100vh - 600px) * -1);
+    }
 }
